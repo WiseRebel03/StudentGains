@@ -9,8 +9,6 @@ const faqs = [
     { q: 'Who is eligible for student discounts?', a: 'Any student currently enrolled in a recognised Indian college or university. This includes UG, PG, diploma, and professional courses.' },
     { q: 'How does student verification work?', a: 'We verify students using college email addresses (preferred) or document upload (student ID, fee receipt, or admission letter). Verification is quick and free.' },
     { q: 'How long does verification last?', a: 'Verification is valid for 6 months from the date it is approved. We\'ll remind you to re-verify before it expires.' },
-    { q: 'Is my personal data shared with brands?', a: 'Never. We only share your verification status with brands — not your name, college, or any personal details.' },
-    { q: 'How many brands are available?', a: 'We currently partner with 20+ leading Indian and global brands, with new brands added every month.' },
     { q: 'Can I use discounts multiple times?', a: 'Discount terms vary by brand. Some are one-time, others are recurring — each brand\'s offer page has the full terms.' },
     { q: 'What if my college email isn\'t working?', a: 'Use the document upload fallback. Upload your student ID card, fee receipt, or admission letter and our team will verify it within 1–2 business days.' },
     { q: 'Is StudentGains free?', a: 'Yes, completely free for students. We partner with brands to offer exclusive deals — you never pay anything to access discounts.' },
