@@ -116,11 +116,6 @@ const LandingPage = () => {
                             <h3>College-verified</h3>
                             <p>We verify using college email addresses and official documents. No fake students.</p>
                         </div>
-                        <div className="trust-card trust-card-dark">
-                            <span className="trust-icon">🔒</span>
-                            <h3>Your data, protected</h3>
-                            <p>We share only your verification status with brands — nothing more. Ever.</p>
-                        </div>
                         <div className="trust-card">
                             <span className="trust-icon">🔄</span>
                             <h3>Re-verified every 6 months</h3>
