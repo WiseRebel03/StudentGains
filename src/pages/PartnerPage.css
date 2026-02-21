@@ -1,0 +1,213 @@
+.partner-hero {
+    background: var(--gradient-hero);
+    color: white;
+    padding: var(--space-24) 0 var(--space-20);
+    position: relative;
+    overflow: hidden;
+}
+
+.partner-hero-bg-shapes {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.partner-shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.15;
+}
+
+.p-shape-1 {
+    width: 500px;
+    height: 500px;
+    background: var(--color-accent);
+    top: -100px;
+    right: -100px;
+}
+
+.p-shape-2 {
+    width: 350px;
+    height: 350px;
+    background: var(--color-primary-light);
+    bottom: -80px;
+    left: 10%;
+}
+
+.partner-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+}
+
+.partner-hero-title {
+    font-size: clamp(2rem, 5vw, 3.75rem);
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    margin: var(--space-3) 0 var(--space-5);
+    line-height: 1.1;
+}
+
+.partner-hero-sub {
+    font-size: var(--font-size-lg);
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: var(--space-8);
+    line-height: 1.6;
+    max-width: 560px;
+}
+
+.benefit-card {
+    display: flex;
+    gap: var(--space-5);
+    align-items: flex-start;
+    padding: var(--space-6);
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border-light);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+}
+
+.benefit-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.benefit-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.benefit-title {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    margin-bottom: var(--space-2);
+}
+
+.benefit-desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.partner-how-section {
+    background: var(--color-surface-alt);
+}
+
+.partner-steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    max-width: 700px;
+    margin: 0 auto var(--space-10);
+}
+
+.partner-step {
+    display: flex;
+    gap: var(--space-5);
+    align-items: flex-start;
+    background: var(--color-surface);
+    padding: var(--space-5) var(--space-6);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border-light);
+    box-shadow: var(--shadow-sm);
+}
+
+.partner-step-num {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: var(--font-size-sm);
+    flex-shrink: 0;
+}
+
+.partner-step-title {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.partner-step-desc {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.api-snippet-card {
+    background: #18181B;
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.api-snippet-title {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-4);
+}
+
+.api-code {
+    color: #A5F3FC;
+    font-family: 'Courier New', monospace;
+    font-size: var(--font-size-sm);
+    line-height: 1.7;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+.partner-form-section {
+    background: var(--color-surface);
+}
+
+.partner-form-wrap {
+    max-width: 560px;
+    margin: 0 auto;
+    background: var(--color-surface);
+    border-radius: var(--radius-xl);
+    padding: var(--space-10);
+    border: 1px solid var(--color-border-light);
+    box-shadow: var(--shadow-lg);
+}
+
+.partner-form-header {
+    margin-bottom: var(--space-8);
+}
+
+.partner-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.partner-submitted {
+    text-align: center;
+    padding: var(--space-8);
+}
+
+.submitted-icon {
+    font-size: 3.5rem;
+    margin-bottom: var(--space-4);
+}
+
+.partner-submitted h3 {
+    font-size: var(--font-size-2xl);
+    font-weight: 800;
+    margin-bottom: var(--space-3);
+}
+
+.partner-submitted p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}

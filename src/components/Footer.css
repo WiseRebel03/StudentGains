@@ -1,0 +1,115 @@
+.footer {
+    background: #18181B;
+    color: var(--color-text-muted);
+    padding: var(--space-16) 0 var(--space-8);
+    margin-top: auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--space-10);
+    padding-bottom: var(--space-10);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+}
+
+.footer-logo .navbar-logo-badge {
+    background: rgba(79, 70, 229, 0.2);
+    color: var(--color-primary-light);
+}
+
+.footer-tagline {
+    font-size: var(--font-size-sm);
+    line-height: 1.7;
+    color: #A1A1AA;
+    margin-bottom: var(--space-4);
+}
+
+.footer-trust-badges {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.footer-trust-item {
+    font-size: var(--font-size-xs);
+    color: #71717A;
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.footer-col-title {
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: var(--space-4);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.footer-links a {
+    font-size: var(--font-size-sm);
+    color: #71717A;
+    transition: color var(--transition-fast);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--space-8);
+    flex-wrap: wrap;
+    gap: var(--space-3);
+}
+
+.footer-copyright,
+.footer-note {
+    font-size: var(--font-size-xs);
+    color: #52525B;
+}
+
+@media (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-8);
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 400px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}

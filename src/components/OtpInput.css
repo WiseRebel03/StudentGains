@@ -1,0 +1,43 @@
+.otp-input-group {
+    display: flex;
+    gap: var(--space-3);
+    justify-content: center;
+    margin: var(--space-6) 0;
+}
+
+.otp-digit {
+    width: 52px;
+    height: 60px;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-text);
+    background: var(--color-surface);
+    transition: all var(--transition-fast);
+    outline: none;
+    caret-color: var(--color-primary);
+}
+
+.otp-digit:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.otp-digit:not(:placeholder-shown) {
+    border-color: var(--color-primary-light);
+    background: var(--color-primary-bg);
+}
+
+@media (max-width: 400px) {
+    .otp-digit {
+        width: 42px;
+        height: 52px;
+        font-size: var(--font-size-xl);
+    }
+
+    .otp-input-group {
+        gap: var(--space-2);
+    }
+}

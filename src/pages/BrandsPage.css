@@ -1,0 +1,104 @@
+.brands-hero {
+    background: var(--gradient-hero);
+    padding: var(--space-16) 0 var(--space-10);
+    color: white;
+    text-align: center;
+}
+
+.brands-hero-title {
+    font-size: var(--font-size-4xl);
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    margin-bottom: var(--space-3);
+}
+
+.brands-hero-sub {
+    font-size: var(--font-size-lg);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.brands-content {
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-16);
+}
+
+.brands-filters {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+}
+
+.category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+
+.category-chip {
+    padding: 7px 16px;
+    border-radius: var(--radius-full);
+    border: 1.5px solid var(--color-border);
+    background: var(--color-surface);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.category-chip:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.category-chip-active {
+    border-color: var(--color-primary);
+    background: var(--color-primary-bg);
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.sort-filters {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    flex-shrink: 0;
+}
+
+.sort-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    font-weight: 500;
+}
+
+.sort-chip {
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    border: 1.5px solid var(--color-border);
+    background: var(--color-surface);
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    color: var(--color-text-secondary);
+}
+
+.sort-chip:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.sort-chip-active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: white;
+    font-weight: 600;
+}
+
+.brands-count {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-6);
+}
