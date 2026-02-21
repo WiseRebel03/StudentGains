@@ -205,7 +205,6 @@ const VerifyPage = () => {
                                             <button className="btn btn-primary" onClick={handleDocSubmit} disabled={!docFile}>
                                                 Submit for review →
                                             </button>
-                                            <p className="verify-privacy">🔒 Documents are used only for verification and deleted after review.</p>
                                         </>
                                     ) : (
                                         <div className="verify-sent">
@@ -223,10 +222,6 @@ const VerifyPage = () => {
                             </div>
                         )}
 
-                        {/* Privacy note */}
-                        <div className="verify-privacy-banner">
-                            🔒 We only share your verification status with brands — not your name, email, or college details.
-                        </div>
                     </>
                 )}
             </div>
