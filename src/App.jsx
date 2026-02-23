@@ -14,6 +14,7 @@ import DashboardPage from './pages/DashboardPage';
 import BrandDetailPage from './pages/BrandDetailPage';
 import PartnerPage from './pages/PartnerPage';
 import AdminPage from './pages/AdminPage';
+import BrandsDeckPage from './pages/BrandsDeckPage';
 
 // Protected Route: only accessible when logged in
 const ProtectedRoute = ({ children }) => {
@@ -43,6 +44,9 @@ const AppRoutes = () => (
     <Route path="/brands" element={<PublicLayout><BrandsPage /></PublicLayout>} />
     <Route path="/brands/:brandId" element={<PublicLayout><BrandDetailPage /></PublicLayout>} />
     <Route path="/partner" element={<PublicLayout><PartnerPage /></PublicLayout>} />
+
+    {/* Hidden brand pitch page — not linked from nav, share URL directly with brands */}
+    <Route path="/brands-deck" element={<AuthLayout><BrandsDeckPage /></AuthLayout>} />
 
     {/* Auth pages (no nav) */}
     <Route path="/signup" element={<AuthLayout><AuthPage mode="signup" /></AuthLayout>} />
